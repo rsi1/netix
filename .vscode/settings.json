@@ -1,0 +1,35 @@
+{
+    "githubIssues.queries": [
+
+        {
+            "label": "Moje problémy",
+            "query": "is:open assignee:${user} repo:${owner}/${repository}",
+            "groupBy": [
+                "milestone"
+            ]
+        },
+        {
+            "label": "Vytvořené problémy",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        },
+        {
+            "label": "Poslední problémy",
+            "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+        }
+    ],
+    "githubPullRequests.queries": [
+        
+        {
+            "label": "Čeká se na moji recenzi",
+            "query": "is:open review-requested:${user}"
+        },
+        {
+            "label": "Přiřazeno mně",
+            "query": "is:open assignee:${user}"
+        },
+        {
+            "label": "Vytvořeno mnou",
+            "query": "is:open author:${user}"
+        }
+    ]
+}

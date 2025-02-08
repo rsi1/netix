@@ -1,0 +1,131 @@
+
+
+body {
+  background-color: rgba(63, 133, 139, 0.6);
+}
+
+h1 {
+  color: rgb(47, 36, 36);
+  text-align:
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+
+.{
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #dba2a2;
+  background: #f35105;
+  margin: 0 auto; /* Vodorovně vycentruje blok s textem. Ze shora i zespoda bude odsazení 0px */
+  width: 350px;
+  height: auto;
+}
+
+
+#sloupec {
+  width: 800px;
+  height: auto;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.obdelnik {
+    background:#CCCCCC; /* barva pozad� */
+    border: 3px solid #999999; /* definice r�me�ku */
+    width:20px; /* ���ka */
+    height:40px; /* v��ka */
+    float:left; /* obt�k�n� z leva */
+    margin-left:5px; /* vn�j�� voln� okraj z leva */
+     
+    -webkit-animation-name:loading; /* n�zev animace */
+    -webkit-animation-duration:1.3s; /* doba trv�n� animace */
+    -webkit-animation-iteration-count:infinite; /* animace prob�h� ve smy�ce */
+    -webkit-animation-direction:linear; /* funkce pr�b�hu animace */
+    -webkit-transform:scale(0.91); /* velikost bude zmen�ena na 0.91 => na 91% */
+     
+    -moz-animation-name:loading;
+    -moz-animation-duration:1.3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:linear;
+    -moz-transform:scale(0.91);
+     
+    -o-animation-name:loading;
+    -o-animation-duration:1.3s;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:linear;
+    -o-transform:scale(0.91);
+     
+    -ms-animation-name:loading;
+    -ms-animation-duration:1.3s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:linear;
+    -ms-transform:scale(0.91);
+     
+    animation-name:loading;
+    animation-duration:1.3s;
+    animation-iteration-count:infinite;
+    animation-direction:linear;
+    transform:scale(0.91);
+     
+    opacity:0.1; /* viditelnost 0.1 => 10% */
+}
+
+#navMain{
+  list-style:none;
+  font-family:tahoma;
+  font-size:14px;
+  border:1px #a81b2f solid;
+  float:left;
+  width:100%;
+  margin:0;
+  padding:0;
+  background-color:#7f2020;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  }
+  #navMain > li{
+  float:left;
+  position:relative;
+  border-right:1px solid #9b2838;
+  }
+  #navMain > li > a{
+  color:#f4e4e6;
+  float:left;
+  text-decoration:none;
+  padding:11px 18px;
+  border-right:1px solid #fff;
+  }
+  #navMain > li > a:hover{
+    background: rgba(99, 20, 32, 0.25);
+  }
+  #navMain ul {
+  display:none;
+  position:absolute;
+  list-style:none;
+  left:0;
+  padding:0;
+  margin:0;
+  border-top:1px #7f2020 solid;
+  background:#505050;
+  }
+  #navMain ul li a{
+  color:#fff;
+  text-decoration:none;
+  display:block;
+  padding:6px 7px;
+  border-bottom:1px solid #d3d9da;
+  border-left:1px solid #d3d9da;
+  border-right:1px solid #d3d9da;
+  font-size:13px;
+  }
+  #navMain li:hover ul {
+  display:block;
+  top:39px;
+  min-width:200px;
+  }
